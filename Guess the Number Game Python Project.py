@@ -1,10 +1,10 @@
 def guess_num ():
     import random
-    #set range 0 - 10
-    guess = random.randrange(0,10)
+    #set range 0 - 100
+    guess = random.randrange(0,100)
     coin = 0
     while coin <= 1 :
-        try_num = input("\n"+'Guess the Number (1 - 10):')
+        try_num = input("\n"+'Guess the Number (1 - 100):')
         if try_num.isalpha():
             print("\n"+"Insert Number")
         if guess > int(try_num):
